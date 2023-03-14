@@ -1,0 +1,12 @@
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Negocio.dll
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Negocio.pdb
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Datos.dll
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Entidad.dll
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Datos.pdb
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\Capa_Entidad.pdb
+C:\Users\kenii\source\repos\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.AssemblyReference.cache
+C:\Users\kenii\source\repos\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CoreCompileInputs.cache
+C:\Users\kenii\source\repos\Capa_Negocio\obj\Debug\Capa_Negocio.csproj.CopyComplete
+C:\Users\kenii\source\repos\Capa_Negocio\obj\Debug\Capa_Negocio.dll
+C:\Users\kenii\source\repos\Capa_Negocio\obj\Debug\Capa_Negocio.pdb
+C:\Users\kenii\source\repos\Capa_Negocio\bin\Debug\FontAwesome.Sharp.dll

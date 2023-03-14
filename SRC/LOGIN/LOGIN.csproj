@@ -1,0 +1,142 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{DA56A635-5BF2-414F-92D6-CE7E88E2817C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>LOGIN</RootNamespace>
+    <AssemblyName>LOGIN</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FontAwesome.Sharp, Version=6.2.1.0, Culture=neutral, PublicKeyToken=d16d1e4e568ec10f, processorArchitecture=MSIL">
+      <HintPath>..\actualizardatos\packages\FontAwesome.Sharp.6.2.1\lib\net472\FontAwesome.Sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="logueo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="logueo.Designer.cs">
+      <DependentUpon>logueo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PRINCIPAL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PRINCIPAL.Designer.cs">
+      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="logueo.resx">
+      <DependentUpon>logueo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PRINCIPAL.resx">
+      <DependentUpon>PRINCIPAL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\actualizarclientess\actualizarclientess.csproj">
+      <Project>{acbc5c44-09c8-42d5-8b00-609d53070eda}</Project>
+      <Name>actualizarclientess</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\actualizarconductor\actualizarconductor.csproj">
+      <Project>{c9b5d263-00e8-4676-87c7-82882c5efc46}</Project>
+      <Name>actualizarconductor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\actualizarparamedico\actualizarparamedico.csproj">
+      <Project>{f385af72-a5c1-4b36-988b-74c79a2aea7d}</Project>
+      <Name>actualizarparamedico</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AMBULANCIA\AMBULANCIA.csproj">
+      <Project>{77c59f07-6551-4d0d-bae5-b4c4ad6f6b44}</Project>
+      <Name>AMBULANCIA</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Entidad\Capa_Entidad.csproj">
+      <Project>{e257ccee-cf3c-4cbf-a58c-9d7f89d22942}</Project>
+      <Name>Capa_Entidad</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Capa_Negocio\Capa_Negocio.csproj">
+      <Project>{9f0bf0e7-5137-49c5-8adf-05148f7282ee}</Project>
+      <Name>Capa_Negocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Clientes\Clientes.csproj">
+      <Project>{1f0685c2-d085-47a0-aaf3-6857a2df62cb}</Project>
+      <Name>Clientes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CONDUCTOR\CONDUCTOR.csproj">
+      <Project>{b5449a30-1026-425a-9991-9afed196c52a}</Project>
+      <Name>CONDUCTOR</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PARAMEDICO\PARAMEDICO.csproj">
+      <Project>{d10ca3a2-16c1-465a-a939-750bf5c1152d}</Project>
+      <Name>PARAMEDICO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\LOGO.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

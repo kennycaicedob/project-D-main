@@ -1,0 +1,8 @@
+C:\Users\kenii\source\repos\Capa_Entidad\bin\Debug\Capa_Entidad.dll
+C:\Users\kenii\source\repos\Capa_Entidad\bin\Debug\Capa_Entidad.pdb
+C:\Users\kenii\source\repos\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.AssemblyReference.cache
+C:\Users\kenii\source\repos\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CoreCompileInputs.cache
+C:\Users\kenii\source\repos\Capa_Entidad\obj\Debug\Capa_Entidad.dll
+C:\Users\kenii\source\repos\Capa_Entidad\obj\Debug\Capa_Entidad.pdb
+C:\Users\kenii\source\repos\Capa_Entidad\bin\Debug\FontAwesome.Sharp.dll
+C:\Users\kenii\source\repos\Capa_Entidad\obj\Debug\Capa_Entidad.csproj.CopyComplete
